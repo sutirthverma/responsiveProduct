@@ -1,0 +1,199 @@
+<!-- Sutirth -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <link rel="stylesheet" href="app/Style/style.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="nav">
+      <div class="left">
+        <img class="menu tabletDisplayNo desktopDisplayNo" src="images/icon-menu.svg" alt="">
+
+        <img src="images/logo.svg" alt="sneakers-logo" class="logo">
+
+        <div class="desk header-collection hLink">Collections</div>
+        <div class="desk header-collection hLink">Men</div>
+        <div class="desk header-collection hLink">Women</div>
+        <div class="desk header-collection hLink">About</div>
+        <div class="desk header-collection hLink">Contact</div>
+      </div>
+
+      <div class="right">
+        <span class="cartQuantity"></span>
+        <i class="bi bi-cart cart"></i>
+        <img src="images/image-avatar.png" alt="" class="profile">
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main class="main">
+
+    <section class="header-menu">
+
+      <img src="images/icon-close.svg" alt="" class="closeMenu">
+
+      <ul class="headerList">
+        <li class="listItem li">Collections</li>
+        <li class="listItem li">Men</li>
+        <li class="listItem li">Women</li>
+        <li class="listItem li">About</li>
+        <li class="listItem li">Contact</li>
+      </ul>
+    </section>
+
+
+    <section class="cartPreview hide">
+      <h2>Cart</h2>
+      <hr>
+
+      <div class="emptyCart">Your cart is empty </div>
+
+      <div class="cartAllProductDetails">
+        <div class="cartProduct">
+          <div class="cartProdDetails">
+            <div class="pCi">
+              <img src="images/image-product-1-thumbnail.jpg" alt="" class="productCartImg">
+            </div>
+
+            <div class="prD">
+
+              <div class="pCTitle"></div>
+              <div class="pCP">
+                <div class="pCprice"></div>
+                <div class="mul">x</div>
+                <div class="totalQuantity"></div>
+                <div class="finalPrice"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="delete">
+            <i class="bi bi-trash-fill"></i>
+          </div>
+        </div>
+
+        <button class="btn">
+          <i class="bi bi-cart cart btnCart"></i>
+
+          Add to Cart
+        </button>
+      </div>
+    </section>
+
+    <div class="arrows mobileOnly">
+      <div class="arrowStyle">
+        <i class=" bi arrow leftArrow bi-arrow-left-circle-fill"></i>
+        <i class="bi arrow rightArrow bi-arrow-right-circle-fill"></i>
+      </div>
+    </div>
+
+
+
+    <div class="previewProduct">
+
+      <div class="track-container mobileOnly">
+        <ul class="track">
+          <li class="slide firstSlide currentSlide">
+            <img src="images/image-product-1.jpg" class="productImg" alt="">
+          </li>
+          <li class="slide">
+            <img src="images/image-product-2.jpg" class="productImg" alt="">
+          </li>
+          <li class="slide">
+            <img src="images/image-product-3.jpg" class="productImg" alt="">
+          </li>
+          <li class="slide lastSlide">
+            <img src="images/image-product-4.jpg" class="productImg" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <img src="images/image-product-1.jpg" alt="" class="image mainImg productImg desk">
+
+      <ul class="previewImages desk">
+        <li class="img-1 thumbnail">
+          <img src="images/image-product-1-thumbnail.jpg" class="image" alt="">
+        </li>
+        <li class="img-2 thumbnail">
+          <img src="images/image-product-2-thumbnail.jpg" class="image" alt="">
+        </li>
+        <li class="img-3 thumbnail">
+          <img src="images/image-product-3-thumbnail.jpg" class="image" alt="">
+        </li>
+        <li class="img-4 thumbnail">
+          <img src="images/image-product-4-thumbnail.jpg" class="image" alt="">
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="product">
+      <div class="product-company">
+        Sneaker Company
+      </div>
+
+      <div class="product-name">
+        Fall Limited Edition Sneakers
+      </div>
+
+      <div class="product-desc">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </div>
+
+      <div class="product-priceSection">
+        <div class="product-price">
+          <div class="price">$125.00</div>
+          <div class="discount">50%</div>
+        </div>
+
+        <div class="originalPrice">$250.00</div>
+      </div>
+
+      <div class="amount">
+        <div class="less">
+          <img src="images/icon-minus.svg" alt="" class="minusImg">
+        </div>
+        <div class="quantity">0</div>
+        <div class="add">
+          <img src="images/icon-plus.svg" alt="" class="plusImg">
+        </div>
+      </div>
+
+      <button class="btn">
+        <i class="bi bi-cart cart btnCart"></i>
+
+        Add to Cart
+      </button>
+    </div>
+
+  </main>
+
+  <script  src="app/js/script.js"></script>
+  <script  src="app/js/carousel.js"></script>
+
+
+</body>
+
+</html>

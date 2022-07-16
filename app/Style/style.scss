@@ -42,12 +42,20 @@ ul {
         .hLink {
             margin-left: 2em;
         }
+
+        .hLink{
+            cursor: pointer;
+        }
     }
 
     .right {
         .cart {
             font-size: 1.2em;
             margin-right: 2em;
+        }
+
+        .cart, .cartQuantity{
+            cursor: pointer;
         }
     }
 }

@@ -66,7 +66,7 @@ checkQuantity();
 
 //Cart 
 cartPreview.style.display = 'none';
-cart.addEventListener('click', () => {
+function cartIfElse(){
     if (cartPreview.classList.contains('hide')) {
         cartPreview.style.display = 'block';
         cartPreview.classList.replace('hide', 'cartAnimation');
@@ -76,7 +76,15 @@ cart.addEventListener('click', () => {
             cartPreview.style.display = 'none';
         },500)
     }
-})
+}
+
+cartQuantity.addEventListener('click', () => {
+    cartIfElse();
+});
+
+cart.addEventListener('click', () => {
+    cartIfElse();
+});
 
 //Title of Product in Cart with limited no. of characters
 pCTitle.innerHTML = productName.innerHTML.trim().substring(0, 20) + '...'; //Product Title for Cart

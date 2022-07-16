@@ -28,9 +28,15 @@ ul {
 .nav .left .hLink {
   margin-left: 2em;
 }
+.nav .left .hLink {
+  cursor: pointer;
+}
 .nav .right .cart {
   font-size: 1.2em;
   margin-right: 2em;
+}
+.nav .right .cart, .nav .right .cartQuantity {
+  cursor: pointer;
 }
 
 .btn {
